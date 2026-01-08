@@ -1,41 +1,145 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>PROFILE | Jose Benaya Rehiary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- MAIN -->
     <div class="container">
-        <form>
-            <legend class="mb-5">
-                <h1>
-                    Gopay Gratis
-                </h1>
-            </legend>
-            <div class="mb-3">
-                <div class="form-label">Nomor HP</div>
-                <input type="tel" name="nomorhp" id="nomor-hp" class="form-control">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">...</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <section class="vh-100 d-flex align-items-center bg-light">
+            <div class="container text-center">
+                <img src="profile.jpg" class="rounded-circle mb-4 shadow" width="150" height="150"
+                    style="object-fit: cover;" alt="Profile">
+                <h1 class="fw-bold">Jose Rehiary</h1>
+                <p class="lead text-muted">Computer Engineering Student</p>
+                <a href="#contact" class="btn btn-outline-dark btn-lg mt-3">Contact Me</a>
+            </div>
+        </section>
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 class="fw-bold mb-4">About Me</h2>
+                        <p class="text-muted">
+                            Saya adalah mahasiswa Teknik yang tertarik pada Software dan Computer Engineering
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-5">Skills</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm text-center">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Web Development</h5>
+                                <p class="card-text text-muted">HTML, CSS, Bootstrap, PHP, Node.js</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm text-center">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Programming</h5>
+                                <p class="card-text text-muted">Python, JavaScript, C/C++</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm text-center">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Game Development</h5>
+                                <p class="card-text text-muted">Unity, Ren'Py</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-5">Portfolio</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Landing Page</h5>
+                                <p class="card-text text-muted">Website profil menggunakan Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">REST API</h5>
+                                <p class="card-text text-muted">CRUD API dengan Laravel / PHP.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Game</h5>
+                                <p class="card-text text-muted">2D Game menggunakan Unity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Contact</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <button class="btn btn-outline-dark w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-success">Kirim</button>
-        </form>
+        </section>
+
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <footer class="py-3 bg-black text-center text-light">
+        <small>© 2026 Jose Rehiary. All rights reserved.</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
 
