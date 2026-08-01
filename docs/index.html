@@ -1,129 +1,153 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PROFILE | Jose Benaya Rehiary</title>
+    <meta name="description"
+        content="Portfolio of Jose Benaya Rehiary, a passionate Computer Engineering student specializing in Software Development.">
+    <title>Jose Benaya Rehiary | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- MAIN -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">...</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <a class="navbar-brand fw-bold fs-4" href="#">JR<span class="text-primary">.</span></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 fw-medium">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
                         <!-- Social Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/jsrehiary" target="_blank">
+                        <li class="nav-item d-flex gap-2 mt-2 mt-lg-0 ms-lg-3">
+                            <a class="nav-link fs-5" href="https://github.com/jsrehiary" target="_blank"
+                                aria-label="GitHub">
                                 <i class="bi bi-github"></i>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://linkedin.com/in/jsrehiary" target="_blank">
+                            <a class="nav-link fs-5" href="https://linkedin.com/in/jsrehiary" target="_blank"
+                                aria-label="LinkedIn">
                                 <i class="bi bi-linkedin"></i>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://instagram.com/js.rehiary" target="_blank">
+                            <a class="nav-link fs-5" href="https://instagram.com/js.rehiary" target="_blank"
+                                aria-label="Instagram">
                                 <i class="bi bi-instagram"></i>
                             </a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
-        <section class="vh-100 d-flex align-items-center bg-light">
-            <div class="container text-center">
-                <img src="profile.jpeg" class="rounded-circle mb-4 shadow" width="150" height="150"
-                    style="object-fit: cover;" alt="Profile">
-                <h1 class="fw-bold">Jose Benaya Rehiary</h1>
-                <p class="lead text-muted">Computer Engineering Student</p>
-                <a href="#contact" class="btn btn-outline-dark btn-lg mt-3">Contact Me</a>
+
+        <section class="vh-100 d-flex align-items-center hero-gradient" id="home">
+            <div class="container text-center text-lg-start mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="badge bg-primary bg-opacity-25 text-primary mb-3 px-3 py-2 rounded-pill">Available
+                            for work</span>
+                        <h1 class="fw-bolder display-4 mb-3">Hi, I'm <br><span class="gradient-text">Jose Benaya
+                                Rehiary</span></h1>
+                        <p class="lead text-muted-custom mb-4 pe-lg-5">Computer Engineering student with a passion for
+                            building robust software solutions, engaging web applications, and interactive game
+                            experiences.</p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                            <a href="mailto:your.email@example.com"
+                                class="btn btn-primary-custom btn-lg px-4 rounded-pill"><i
+                                    class="bi bi-envelope-fill me-2"></i>Email Me</a>
+                            <a href="#portfolio" class="btn btn-outline-custom btn-lg px-4 rounded-pill">View Work</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center mb-5 mb-lg-0" data-aos="zoom-in"
+                        data-aos-duration="1000" data-aos-delay="200">
+                        <div class="position-relative d-inline-block">
+                            <img src="profile.jpeg" class="rounded-circle shadow-lg" width="480" height="480"
+                                style="object-fit: cover; border: 4px solid var(--accent-primary);" alt="Profile">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
         <section id="about" class="py-5">
-            <div class="container">
+            <div class="container py-5">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <h2 class="fw-bold mb-4">About Me</h2>
-                        <p class="text-muted">
-                            Saya adalah mahasiswa Teknik yang tertarik pada Software dan Computer Engineering
+                    <div class="col-lg-8 text-center" data-aos="fade-up">
+                        <h2 class="fw-bold mb-4 display-6">About Me</h2>
+                        <div class="mx-auto bg-primary mb-4" style="height: 4px; width: 60px; border-radius: 2px;">
+                        </div>
+                        <p class="text-muted-custom fs-5 lh-lg mb-4">
+                            Saya adalah mahasiswa Teknik Komputer yang memiliki antusiasme tinggi terhadap dunia
+                            Software Engineering. Saya menikmati proses memecahkan masalah kompleks melalui kode yang
+                            bersih dan efisien.
                         </p>
+                        <p class="text-muted-custom fs-5 lh-lg mb-5">
+                            Fokus utama saya saat ini adalah mengembangkan aplikasi web modern dan eksplorasi dalam Game
+                            Development. Saya selalu mencari tantangan baru untuk terus belajar dan berinovasi dalam
+                            setiap proyek yang saya kerjakan.
+                        </p>
+                        <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2"><i
+                                class="bi bi-file-earmark-person me-2"></i>Download Resume</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="skills" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="fw-bold text-center mb-5">Skills</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm text-center">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Web Development</h5>
-                                <p class="card-text text-muted">HTML, CSS, Bootstrap, PHP, Node.js</p>
+
+        <section id="skills" class="py-5" style="background-color: rgba(30, 41, 59, 0.5);">
+            <div class="container py-5">
+                <h2 class="fw-bold text-center mb-4 display-6" data-aos="fade-up">My Expertise</h2>
+                <div class="mx-auto bg-primary mb-5" style="height: 4px; width: 60px; border-radius: 2px;"
+                    data-aos="fade-up"></div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card h-100 p-4 text-center">
+                            <div class="display-4 text-primary mb-3"><i class="bi bi-browser-chrome"></i></div>
+                            <h5 class="fw-bold mb-3">Web Development</h5>
+                            <p class="text-muted-custom mb-4">Building responsive and interactive websites.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge text-bg-dark border border-secondary">HTML/CSS</span>
+                                <span class="badge text-bg-dark border border-secondary">Bootstrap</span>
+                                <span class="badge text-bg-dark border border-secondary">PHP & Laravel</span>
+                                <span class="badge text-bg-dark border border-secondary">Node.js</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm text-center">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Programming</h5>
-                                <p class="card-text text-muted">Python, JavaScript, C/C++</p>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="glass-card h-100 p-4 text-center">
+                            <div class="display-4 text-secondary mb-3"><i class="bi bi-code-slash"
+                                    style="color: var(--accent-secondary);"></i></div>
+                            <h5 class="fw-bold mb-3">Programming</h5>
+                            <p class="text-muted-custom mb-4">Writing clean code and solving algorithms.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge text-bg-dark border border-secondary">Python</span>
+                                <span class="badge text-bg-dark border border-secondary">JavaScript</span>
+                                <span class="badge text-bg-dark border border-secondary">C / C++</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm text-center">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Game Development</h5>
-                                <p class="card-text text-muted">Unity, Ren'Py</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="py-5">
-            <div class="container">
-                <h2 class="fw-bold text-center mb-5">Portfolio</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Landing Page</h5>
-                                <p class="card-text text-muted">Website profil menggunakan Bootstrap.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">REST API</h5>
-                                <p class="card-text text-muted">CRUD API dengan Laravel / PHP.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Game</h5>
-                                <p class="card-text text-muted">2D Game menggunakan Unity</p>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="glass-card h-100 p-4 text-center">
+                            <div class="display-4 text-info mb-3"><i class="bi bi-controller"></i></div>
+                            <h5 class="fw-bold mb-3">Game Development</h5>
+                            <p class="text-muted-custom mb-4">Creating engaging game mechanics and stories.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge text-bg-dark border border-secondary">Unity (C#)</span>
+                                <span class="badge text-bg-dark border border-secondary">Ren'Py</span>
                             </div>
                         </div>
                     </div>
@@ -131,35 +155,129 @@
             </div>
         </section>
 
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="fw-bold text-center mb-4">Contact</h2>
+        <section id="portfolio" class="py-5">
+            <div class="container py-5">
+                <h2 class="fw-bold text-center mb-4 display-6" data-aos="fade-up">Featured Projects</h2>
+                <div class="mx-auto bg-primary mb-5" style="height: 4px; width: 60px; border-radius: 2px;"
+                    data-aos="fade-up"></div>
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card h-100 d-flex flex-column overflow-hidden">
+                            <img src="https://img.itch.zone/aW1nLzIzNjQ5MjcxLnBuZw==/original/A48F6I.png"
+                                class="portfolio-img w-100" alt="Landing Page">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="card-title fw-bold mb-2">Paranoia</h5>
+                                <p class="card-text text-muted-custom small mb-4 flex-grow-1">Game Development |
+                                    Contributed as User Interface (UI) Programmer
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Unity</span>
+                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">C#</span>
+                                </div>
+                                <div class="d-flex gap-2 mt-auto">
+                                    <a href="https://sirlane19.itch.io/paranoia" target="_blank"
+                                        class="btn btn-sm btn-primary flex-grow-1"
+                                        style="background-color: var(--accent-primary); border: none;"><i
+                                            class="bi bi-box-arrow-up-right me-1"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="glass-card h-100 d-flex flex-column overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
+                                class="portfolio-img w-100" alt="Lofrecy">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="card-title fw-bold mb-2">Lofrecy</h5>
+                                <p class="card-text text-muted-custom small mb-4 flex-grow-1">Automated Bot | Discord
+                                    Bot Application
+                                    using
+                                    Python. Personal project.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Python</span>
+                                </div>
+                                <div class="d-flex gap-2 mt-auto">
+                                    <a href="https://github.com/jsrehiary/Lofrecy" target="_blank"
+                                        class="btn btn-sm btn-outline-light flex-grow-1"><i
+                                            class="bi bi-github me-1"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="glass-card h-100 d-flex flex-column overflow-hidden">
+                            <img src="https://www.boond.id/images/logo.png" class="portfolio-img w-100" alt="Game">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="card-title fw-bold mb-2">Boond</h5>
+                                <p class="card-text text-muted-custom small mb-4 flex-grow-1">Website Application |
+                                    Social
+                                    Application with an RFID integration for quick visiting. Contributed as a backend
+                                    developer.</p>
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Express.js</span>
+                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Tailwind</span>
+                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Firebase</span>
+                                </div>
+                                <div class="d-flex gap-2 mt-auto">
+                                    <a href="https://boond.id" target="_blank"
+                                        class="btn btn-sm btn-primary flex-grow-1"
+                                        style="background-color: var(--accent-primary); border: none;"><i
+                                            class="bi bi-box-arrow-up-right me-1"></i> Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 mb-5">
+            <div class="container py-5">
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Your Email">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                            </div>
-                            <button class="btn btn-outline-dark w-100">Send Message</button>
-                        </form>
+                    <div class="col-lg-6 text-center">
+                        <div class="mb-5" data-aos="fade-up">
+                            <h2 class="fw-bold display-6 mb-3">Let's Connect</h2>
+                            <p class="text-muted-custom">Have a project in mind or just want to say hi? Send me an
+                                email!</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="100">
+                            <a href="mailto:your.email@example.com" class="btn btn-lg px-5 py-3 rounded-pill shadow-lg"
+                                style="background-color: var(--accent-primary); color: white; border: none; font-weight: 600; transition: transform 0.3s ease;">
+                                <i class="bi bi-envelope-fill me-2 fs-4 align-middle"></i> Send Email
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
     </div>
-    <footer class="py-3 bg-black text-center text-light">
-        <small>© 2026 Jose Rehiary. All rights reserved.</small>
+
+    <footer class="py-4 text-center" style="background-color: #0b1120; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <p class="text-muted-custom mb-0 small">&copy; 2026 Jose Benaya Rehiary. Built with Bootstrap & Custom CSS.
+            </p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true, // whether animation should happen only once - while scrolling down
+            offset: 100, // offset (in px) from the original trigger point
+        });
+    </script>
 </body>
 
 </html>
