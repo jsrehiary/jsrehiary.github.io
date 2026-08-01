@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
 :root {
-    --bg-color: #0f172a;
-    --surface-color: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --accent-primary: #3b82f6;
-    --accent-secondary: #8b5cf6;
-    --glass-bg: rgba(15, 23, 42, 0.75);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --bg-color: #171a18;
+    --surface-color: #212522;
+    --text-main: #e2e8f0;
+    --text-muted: #a0aec0;
+    --accent-primary: #2d6a4f;
+    --accent-secondary: #40916c;
+    --glass-bg: rgba(23, 26, 24, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.08);
 }
 
 html {
@@ -42,7 +42,7 @@ section {
 
 /* Hero Gradient */
 .hero-gradient {
-    background: radial-gradient(circle at 50% -20%, #1e1b4b, var(--bg-color) 60%);
+    background: radial-gradient(circle at 50% -20%, #1b3022, var(--bg-color) 60%);
 }
 
 .gradient-text {
@@ -63,7 +63,7 @@ section {
 
 .btn-primary-custom:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 10px 20px rgba(64, 145, 108, 0.3);
     color: white;
 }
 
@@ -111,8 +111,18 @@ section {
     background: var(--surface-color);
     color: var(--text-main);
     border-color: var(--accent-primary);
-    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(45, 106, 79, 0.25);
 }
 .form-control-custom::placeholder {
     color: var(--text-muted);
 }
+
+/* Override Bootstrap Colors */
+.text-primary { color: var(--accent-primary) !important; }
+.bg-primary { background-color: var(--accent-primary) !important; }
+.text-secondary { color: var(--accent-secondary) !important; }
+.bg-secondary { background-color: var(--accent-secondary) !important; }
+.text-bg-secondary { background-color: var(--accent-secondary) !important; color: white !important; }
+.btn-primary { background-color: var(--accent-primary) !important; border-color: var(--accent-primary) !important; color: white !important; }
+.btn-outline-primary { color: var(--accent-primary) !important; border-color: var(--accent-primary) !important; }
+.btn-outline-primary:hover { background-color: var(--accent-primary) !important; color: white !important; }
