@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Portfolio of Jose Benaya Rehiary, a passionate Computer Engineering student specializing in Software Development.">
+        content="Portfolio of Jose Benaya Rehiary - Software Engineer, Web Developer & Game Development Enthusiast.">
     <title>Jose Benaya Rehiary | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,262 +20,521 @@
 </head>
 
 <body>
-    <!-- MAIN -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold fs-4" href="#">JR<span class="text-primary">.</span></a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 fw-medium">
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold me-4" href="#home">JR.</a>
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-                        <!-- Social Links -->
-                        <li class="nav-item d-flex gap-2 mt-2 mt-lg-0 ms-lg-3">
-                            <a class="nav-link fs-5" href="https://github.com/jsrehiary" target="_blank"
-                                aria-label="GitHub">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a class="nav-link fs-5" href="https://linkedin.com/in/jsrehiary" target="_blank"
-                                aria-label="LinkedIn">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a class="nav-link fs-5" href="https://instagram.com/js.rehiary" target="_blank"
-                                aria-label="Instagram">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
 
-        <section class="vh-100 d-flex align-items-center hero-gradient" id="home">
-            <div class="container text-center text-lg-start mt-5">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
-                        <span class="badge bg-primary bg-opacity-25 text-primary mb-3 px-3 py-2 rounded-pill">Available
-                            for work</span>
-                        <h1 class="fw-bolder display-4 mb-3">Hi, I'm <br><span class="gradient-text">Jose Benaya
-                                Rehiary</span></h1>
-                        <p class="lead text-muted-custom mb-4 pe-lg-5">Computer Engineering student with a passion for
-                            building robust software solutions, engaging web applications, and interactive game
-                            experiences.</p>
-                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                            <a href="mailto:your.email@example.com"
-                                class="btn btn-primary-custom btn-lg px-4 rounded-pill"><i
-                                    class="bi bi-envelope-fill me-2"></i>Email Me</a>
-                            <a href="#portfolio" class="btn btn-outline-custom btn-lg px-4 rounded-pill">View Work</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-2 text-center mb-5 mb-lg-0" data-aos="zoom-in"
-                        data-aos-duration="1000" data-aos-delay="200">
-                        <div class="position-relative d-inline-block">
-                            <img src="profile.JPG" class="rounded-circle shadow-lg" width="480" height="480"
-                                style="object-fit: cover; border: 4px solid var(--accent-primary);" alt="Profile">
-                        </div>
-                    </div>
-                </div>
+            <!-- Quick Contact Top Right -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="mailto:your.email@example.com" class="contact-quick">
+                    <i class="bi bi-telephone-fill" style="font-size: 0.85rem; color: var(--accent-blue);"></i>
+                    <span>Contact Me</span>
+                </a>
+                <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenuMobile" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </section>
+        </div>
 
-        <section id="about" class="py-5">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center" data-aos="fade-up">
-                        <h2 class="fw-bold mb-4 display-6">About Me</h2>
-                        <div class="mx-auto bg-primary mb-4" style="height: 4px; width: 60px; border-radius: 2px;">
-                        </div>
-                        <p class="text-muted-custom fs-5 lh-lg mb-4">
-                            Saya adalah mahasiswa Teknik Komputer yang memiliki antusiasme tinggi terhadap dunia
-                            Software Engineering. Saya menikmati proses memecahkan masalah kompleks melalui kode yang
-                            bersih dan efisien.
-                        </p>
-                        <p class="text-muted-custom fs-5 lh-lg mb-5">
-                            Fokus utama saya saat ini adalah mengembangkan aplikasi web modern dan eksplorasi dalam Game
-                            Development. Saya selalu mencari tantangan baru untuk terus belajar dan berinovasi dalam
-                            setiap proyek yang saya kerjakan.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse navbar-collapse d-lg-none px-4 pt-3 pb-2" id="navMenuMobile">
+            <ul class="navbar-nav gap-2">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section id="skills" class="py-5" style="background-color: rgba(30, 41, 59, 0.5);">
-            <div class="container py-5">
-                <h2 class="fw-bold text-center mb-4 display-6" data-aos="fade-up">My Expertise</h2>
-                <div class="mx-auto bg-primary mb-5" style="height: 4px; width: 60px; border-radius: 2px;"
-                    data-aos="fade-up"></div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="glass-card h-100 p-4 text-center">
-                            <div class="display-4 text-primary mb-3"><i class="bi bi-browser-chrome"></i></div>
-                            <h5 class="fw-bold mb-3">Web Development</h5>
-                            <p class="text-muted-custom mb-4">Building responsive and interactive websites.</p>
-                            <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <span class="badge text-bg-dark border border-secondary">HTML/CSS</span>
-                                <span class="badge text-bg-dark border border-secondary">Bootstrap</span>
-                                <span class="badge text-bg-dark border border-secondary">PHP & Laravel</span>
-                                <span class="badge text-bg-dark border border-secondary">Node.js</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="glass-card h-100 p-4 text-center">
-                            <div class="display-4 text-secondary mb-3"><i class="bi bi-code-slash"
-                                    style="color: var(--accent-secondary);"></i></div>
-                            <h5 class="fw-bold mb-3">Programming</h5>
-                            <p class="text-muted-custom mb-4">Writing clean code and solving algorithms.</p>
-                            <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <span class="badge text-bg-dark border border-secondary">Python</span>
-                                <span class="badge text-bg-dark border border-secondary">JavaScript</span>
-                                <span class="badge text-bg-dark border border-secondary">C / C++</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="glass-card h-100 p-4 text-center">
-                            <div class="display-4 text-info mb-3"><i class="bi bi-controller"></i></div>
-                            <h5 class="fw-bold mb-3">Game Development</h5>
-                            <p class="text-muted-custom mb-4">Creating engaging game mechanics and stories.</p>
-                            <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <span class="badge text-bg-dark border border-secondary">Unity (C#)</span>
-                                <span class="badge text-bg-dark border border-secondary">Ren'Py</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="py-5">
-            <div class="container py-5">
-                <h2 class="fw-bold text-center mb-4 display-6" data-aos="fade-up">Featured Projects</h2>
-                <div class="mx-auto bg-primary mb-5" style="height: 4px; width: 60px; border-radius: 2px;"
-                    data-aos="fade-up"></div>
-                <div class="row g-4">
-                    <!-- Project 1 -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="glass-card h-100 d-flex flex-column overflow-hidden">
-                            <img src="https://img.itch.zone/aW1nLzIzNjQ5MjcxLnBuZw==/original/A48F6I.png"
-                                class="portfolio-img w-100" alt="Landing Page">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <h5 class="card-title fw-bold mb-2">Paranoia</h5>
-                                <p class="card-text text-muted-custom small mb-4 flex-grow-1">Game Development |
-                                    Contributed as User Interface (UI) Programmer
-                                </p>
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Unity</span>
-                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">C#</span>
-                                </div>
-                                <div class="d-flex gap-2 mt-auto">
-                                    <a href="https://sirlane19.itch.io/paranoia" target="_blank"
-                                        class="btn btn-sm btn-primary flex-grow-1"
-                                        style="background-color: var(--accent-primary); border: none;"><i
-                                            class="bi bi-box-arrow-up-right me-1"></i> Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="glass-card h-100 d-flex flex-column overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
-                                class="portfolio-img w-100" alt="Lofrecy">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <h5 class="card-title fw-bold mb-2">Lofrecy</h5>
-                                <p class="card-text text-muted-custom small mb-4 flex-grow-1">Automated Bot | Discord
-                                    Bot Application
-                                    using
-                                    Python. Personal project.
-                                </p>
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Python</span>
-                                </div>
-                                <div class="d-flex gap-2 mt-auto">
-                                    <a href="https://github.com/jsrehiary/Lofrecy" target="_blank"
-                                        class="btn btn-sm btn-outline-light flex-grow-1"><i
-                                            class="bi bi-github me-1"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 3 -->
-                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="glass-card h-100 d-flex flex-column overflow-hidden">
-                            <img src="https://www.boond.id/images/logo.png" class="portfolio-img w-100" alt="Game">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <h5 class="card-title fw-bold mb-2">Boond</h5>
-                                <p class="card-text text-muted-custom small mb-4 flex-grow-1">Website Application |
-                                    Social
-                                    Application with an RFID integration for quick visiting. Contributed as a backend
-                                    developer.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Express.js</span>
-                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Tailwind</span>
-                                    <span class="badge text-bg-secondary bg-opacity-25 text-light">Firebase</span>
-                                </div>
-                                <div class="d-flex gap-2 mt-auto">
-                                    <a href="https://boond.id" target="_blank"
-                                        class="btn btn-sm btn-primary flex-grow-1"
-                                        style="background-color: var(--accent-primary); border: none;"><i
-                                            class="bi bi-box-arrow-up-right me-1"></i> Visit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-5 mb-5">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="mb-5" data-aos="fade-up">
-                            <h2 class="fw-bold display-6 mb-3">Let's Connect</h2>
-                            <p class="text-muted-custom">Have a project in mind or just want to say hi? Send me an
-                                email!</p>
-                        </div>
-                        <div data-aos="zoom-in" data-aos-delay="100">
-                            <a href="mailto:your.email@example.com" class="btn btn-lg px-5 py-3 rounded-pill shadow-lg"
-                                style="background-color: var(--accent-primary); color: white; border: none; font-weight: 600; transition: transform 0.3s ease;">
-                                <i class="bi bi-envelope-fill me-2 fs-4 align-middle"></i> Send Email
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-
-    <footer class="py-4 text-center" style="background-color: #0e100f; border-top: 1px solid var(--glass-border);">
+    <!-- SCREEN 1: HERO / HOME SECTION -->
+    <section class="section-full hero-section" id="home">
         <div class="container">
-            <p class="text-muted-custom mb-0 small">&copy; 2026 Jose Benaya Rehiary. Built with Bootstrap & Custom CSS.
-            </p>
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <div class="hero-name-top">JOSE</div>
+                        <h1 class="hero-name-main">BENAYA REHIARY</h1>
+                        <p class="hero-subtitle">Software Engineer & Game Developer</p>
+                        
+                        <div class="btn-pill-group">
+                            <a href="#resume" class="btn-pill btn-pill-outline">Resume</a>
+                            <a href="#portfolio" class="btn-pill btn-pill-outline">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Bottom Bar -->
+        <div class="hero-bottom-bar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://github.com/jsrehiary" target="_blank" aria-label="GitHub" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jsrehiary" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/js.rehiary" target="_blank" aria-label="Instagram" title="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://sirlane19.itch.io" target="_blank" aria-label="Itch.io" title="Itch.io">
+                        <i class="bi bi-controller"></i>
+                    </a>
+                </div>
+                <button class="fullscreen-btn" id="fullscreenToggle" aria-label="Toggle Fullscreen" title="Toggle Fullscreen">
+                    <i class="bi bi-fullscreen" id="fullscreenIcon"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN 2: ABOUT SECTION -->
+    <section class="section-full about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: Info & Description -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
+                    <h2 class="section-heading">ABOUT</h2>
+                    <div>
+                        <a href="mailto:your.email@example.com" class="about-email">
+                            <i class="bi bi-envelope me-2"></i>your.email@example.com
+                        </a>
+                    </div>
+                    <p class="about-text">
+                        Computer Engineering student with over 3 years of hands-on experience in software development, web architecture, and interactive game systems. 
+                        I design and implement scalable, efficient digital solutions at local and global scale. My core strength lies in combining algorithmic precision with intuitive user experience, continually striving to streamline workflows and build impactful software applications.
+                    </p>
+                    <div class="about-location-badge">
+                        <span class="loc-line"></span>
+                        <span>Indonesia, Jakarta</span>
+                        <span class="loc-line"></span>
+                    </div>
+                </div>
+
+                <!-- Right: Portrait Image -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+                    <div class="about-photo-wrapper">
+                        <img src="img.jpg" alt="Jose Benaya Rehiary" class="about-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN 3: RESUME SECTION (3-COLUMN LAYOUT) -->
+    <section class="section-full resume-section" id="resume">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- COLUMN 1: SKILLS & LANGUAGES -->
+                <div class="col-lg-4 col-md-6 resume-col" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Software Skills -->
+                    <h3 class="section-heading">SOFTWARE SKILLS</h3>
+                    <div class="mb-4">
+                        <!-- Skill 1: Python -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-icon-badge">Py</span>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 88%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2: JavaScript -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-icon-badge">JS</span>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 82%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3: Unity / C# -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-icon-badge">Un</span>
+                                <span class="skill-name">Unity / C#</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 78%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 4: Web Stack (HTML/CSS/Bootstrap) -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-icon-badge">Wb</span>
+                                <span class="skill-name">HTML / CSS</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 90%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 5: PHP & Laravel -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-icon-badge">Ph</span>
+                                <span class="skill-name">PHP / Laravel</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 70%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <h3 class="section-heading">LANGUAGES</h3>
+                    <div class="mb-4">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Indonesian</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 100%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">English</span>
+                            </div>
+                            <div class="skill-track-wrapper">
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width: 85%;">
+                                        <div class="skill-reticle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Skills -->
+                    <h3 class="section-heading">PERSONAL SKILLS</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.8;">
+                        Problem Solving · Team Collaboration · Agile Development · Clean Architecture · Fast Learner
+                    </p>
+                </div>
+
+                <!-- COLUMN 2: EXPERIENCE & EDUCATION -->
+                <div class="col-lg-4 col-md-6 resume-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="section-heading">EXPERIENCE</h3>
+                    
+                    <div class="timeline">
+                        <!-- Timeline item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <span>2024</span>
+                                <span style="font-size: 0.48rem; color: var(--accent-blue);">NOW</span>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">PARANOIA GAME PROJECT</div>
+                                <div class="timeline-role">UI & Gameplay Programmer</div>
+                                <div class="timeline-desc">Contributed core user interface logic, menu systems, and responsive game HUD interactions using Unity and C#.</div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <span>2023</span>
+                                <span style="font-size: 0.48rem;">2024</span>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">BOOND PLATFORM</div>
+                                <div class="timeline-role">Backend Developer</div>
+                                <div class="timeline-desc">Engineered social visiting web app integrating RFID hardware scanning, Node.js/Express REST APIs, and Firebase.</div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <span>2023</span>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">LOFRECY AUTOMATION</div>
+                                <div class="timeline-role">Lead Developer</div>
+                                <div class="timeline-desc">Developed asynchronous Discord bot automation and server utilities leveraging Python and Discord API.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <h3 class="section-heading">EDUCATION</h3>
+                    <div>
+                        <div class="timeline-title">BACHELOR IN COMPUTER ENGINEERING</div>
+                        <div class="timeline-role">Software Engineering & Computer Systems</div>
+                        <div class="timeline-desc">Focusing on algorithms, computer architecture, web technologies, and systems engineering.</div>
+                    </div>
+                </div>
+
+                <!-- COLUMN 3: WHAT CAN I DO & HOBBIES -->
+                <div class="col-lg-4 col-md-12 resume-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="section-heading">WHAT CAN I DO ?</h3>
+                    <ul class="capability-list">
+                        <li>Full-Stack Web Development & Modern UI</li>
+                        <li>Game UI Architecture & C# Scripting</li>
+                        <li>RESTful API Design & Database Integration</li>
+                        <li>Automation Scripts, Discord Bots & Tools</li>
+                    </ul>
+
+                    <h3 class="section-heading">DEV & DESIGN STRENGTHS</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Responsive Design · Component Architecture · Git Version Control · Hardware/RFID Interfacing · UI Prototyping
+                    </p>
+
+                    <!-- Hobbies & Interests -->
+                    <h3 class="section-heading">HOBBIES & INTERESTS</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <div class="hobby-icon-circle">
+                                <i class="bi bi-controller"></i>
+                            </div>
+                            <span class="hobby-label">Gaming</span>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon-circle">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <span class="hobby-label">Coding</span>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon-circle">
+                                <i class="bi bi-headphones"></i>
+                            </div>
+                            <span class="hobby-label">Music</span>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon-circle">
+                                <i class="bi bi-airplane"></i>
+                            </div>
+                            <span class="hobby-label">Travel</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section-full portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-heading text-center">FEATURED PROJECTS</h2>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Selected works spanning games, web platforms, and automated tools.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1: Paranoia -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="https://img.itch.zone/aW1nLzIzNjQ5MjcxLnBuZw==/original/A48F6I.png"
+                                class="project-img" alt="Paranoia Game">
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">Paranoia</h4>
+                            <p class="project-desc">Immersive indie game project developed with Unity and C#. Contributed as UI programmer implementing menus, HUD, and interactive state management.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="project-tag">Unity</span>
+                                <span class="project-tag">C#</span>
+                                <span class="project-tag">Game UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sirlane19.itch.io/paranoia" target="_blank"
+                                    class="btn-pill btn-pill-blue w-100 py-2 fs-6">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i> Play Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Lofrecy -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
+                                class="project-img" alt="Lofrecy Discord Bot">
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">Lofrecy Bot</h4>
+                            <p class="project-desc">Automated bot application for Discord servers built with Python. Features custom command handling, background scheduling, and moderation tools.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Discord API</span>
+                                <span class="project-tag">Automation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jsrehiary/Lofrecy" target="_blank"
+                                    class="btn-pill btn-pill-outline w-100 py-2 fs-6">
+                                    <i class="bi bi-github me-2"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Boond -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="https://www.boond.id/images/logo.png" class="project-img" alt="Boond Social Platform"
+                                style="object-fit: contain; background: #1a202c; padding: 1.5rem;">
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">Boond</h4>
+                            <p class="project-desc">Social application with seamless RFID integration for fast check-in and visitor management. Contributed backend API architecture and database services.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Firebase</span>
+                                <span class="project-tag">RFID Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://boond.id" target="_blank"
+                                    class="btn-pill btn-pill-blue w-100 py-2 fs-6">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i> Visit Platform
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-full contact-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="zoom-in">
+                    <div class="contact-card">
+                        <h2 class="section-heading">LET'S CONNECT</h2>
+                        <p class="text-secondary fs-5 mb-4">Interested in collaborating on a software project, game development, or just want to chat?</p>
+                        <a href="mailto:your.email@example.com" class="btn-pill btn-pill-blue px-5 py-3 fs-5">
+                            <i class="bi bi-envelope-fill me-2"></i> Send an Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-custom text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Jose Benaya Rehiary. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- AOS Animation JS -->
+    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Interactive Navigation & Fullscreen Scripts -->
     <script>
-        // Initialize AOS
+        // Initialize AOS animations
         AOS.init({
-            once: true, // whether animation should happen only once - while scrolling down
-            offset: 100, // offset (in px) from the original trigger point
+            once: true,
+            duration: 800,
+            offset: 80
         });
+
+        // Navbar active state on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar-custom .nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollPos = window.pageYOffset + 200;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Navbar scroll background change
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Fullscreen Toggle
+        const fsBtn = document.getElementById('fullscreenToggle');
+        const fsIcon = document.getElementById('fullscreenIcon');
+
+        if (fsBtn) {
+            fsBtn.addEventListener('click', () => {
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen().then(() => {
+                        fsIcon.classList.replace('bi-fullscreen', 'bi-fullscreen-exit');
+                    }).catch(err => console.log(err));
+                } else {
+                    document.exitFullscreen().then(() => {
+                        fsIcon.classList.replace('bi-fullscreen-exit', 'bi-fullscreen');
+                    }).catch(err => console.log(err));
+                }
+            });
+        }
     </script>
 </body>
 
